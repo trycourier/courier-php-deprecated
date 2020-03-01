@@ -2,7 +2,7 @@
     "name": "digs/courier-sdk-php",
     "description": "PHP implementation of Courier's API as an SDK.",
     "keywords": [
-        "plaid",
+        "courier",
         "sdk",
         "php"
     ],
