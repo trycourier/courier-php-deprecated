@@ -11,6 +11,10 @@ use Shuttle\Shuttle;
 
 final class Courier
 {
+    /**
+     * @var string Library version, used for setting User-Agent
+     */
+    private $version = '0.1.0';
 
     /**
      * Courier API host name.
@@ -153,7 +157,8 @@ final class Courier
             \json_encode($params),
             [
                 "Authorization" => $this->getAuthorizationHeader(),
-                "Content-Type" => "application/json"
+                "Content-Type" => "application/json",
+                'User-Agent' => 'courier-php/'.$this->version
             ]
         );
     }
