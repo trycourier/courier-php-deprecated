@@ -39,10 +39,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Digs\\Courier\\Laravel\\CourierServiceProvider"
+                "Digs\\Courier\\Laravel\\Providers\\CourierServiceProvider"
             ],
             "aliases": {
-                "Courier": "Digs\\Courier\\Laravel\\CourierFacade"
+                "Courier": "Digs\\Courier\\Laravel\\Facades\\CourierFacade"
             }
         }
     }
